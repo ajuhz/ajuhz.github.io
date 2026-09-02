@@ -1,0 +1,41 @@
+---
+import { getCollection } from 'astro:content';
+import ProjectCard from './ProjectCard.astro';
+
+const projects = (await getCollection('projects')).sort((a, b) => {
+  if (a.data.featured && !b.data.featured) return -1;
+  if (!a.data.featured && b.data.featured) return 1;
+  return (b.data.date?.getTime() || 0) - (a.data.date?.getTime() || 0);
+});
+---
+
+<section id="projects" class="section bg-slate-900/50">
+  <div class="container-page">
+    <h2 class="text-4xl sm:text-5xl font-bold mb-4 text-slate-100">
+      Featured Projects
+    </h2>
+    <p class="text-lg text-slate-400 mb-12 max-w-2xl">
+      Here are some of my recent projects. Each one taught me something new.
+    </p>
+    {projects.length > 0 ? (
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {projects.map((project) => (
+          <ProjectCard
+            title={project.data.title}
+            description={project.data.description}
+            tags={project.data.tags}
+            githubUrl={project.data.githubUrl}
+            liveUrl={project.data.liveUrl}
+            image={project.data.image}
+          />
+        ))}
+      </div>
+    ) : (
+      <div class="text-center py-12">
+        <p class="text-slate-400 text-lg">
+          No projects yet. Check back soon!
+        </p>
+      </div>
+    )}
+  </div>
+</section>
