@@ -1,0 +1,41 @@
+---
+const baseUrl = import.meta.env.BASE_URL;
+---
+
+<div class="relative w-full max-w-xs mx-auto">
+  <!-- Tech-themed background frame -->
+  <div class="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-amber-500/5 rounded-2xl border-2 border-amber-500/30 -z-10 blur-sm"></div>
+
+  <!-- Circuit board pattern container -->
+  <div class="relative rounded-xl overflow-hidden border border-amber-500/50 shadow-2xl shadow-amber-500/20">
+    <!-- Circuit lines - top -->
+    <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-30 -z-5"></div>
+
+    <!-- Circuit lines - sides -->
+    <div class="absolute top-0 bottom-0 left-0 w-1 bg-gradient-to-b from-amber-500 via-amber-500/50 to-transparent opacity-20"></div>
+    <div class="absolute top-0 bottom-0 right-0 w-1 bg-gradient-to-b from-amber-500 via-amber-500/50 to-transparent opacity-20"></div>
+
+    <!-- Main photo -->
+    <img
+      src={`${baseUrl}/profile-photo.jpg`}
+      alt="Ajay Hazra"
+      class="w-full h-auto block relative z-10"
+    />
+
+    <!-- Tech overlay gradient -->
+    <div class="absolute inset-0 bg-gradient-to-t from-amber-500/10 via-transparent to-transparent opacity-60 pointer-events-none"></div>
+
+    <!-- Geometric corner accents -->
+    <div class="absolute top-3 left-3 w-8 h-8 border-t-2 border-l-2 border-amber-400 opacity-60"></div>
+    <div class="absolute top-3 right-3 w-8 h-8 border-t-2 border-r-2 border-amber-400 opacity-60"></div>
+    <div class="absolute bottom-3 left-3 w-8 h-8 border-b-2 border-l-2 border-amber-400 opacity-60"></div>
+    <div class="absolute bottom-3 right-3 w-8 h-8 border-b-2 border-r-2 border-amber-400 opacity-60"></div>
+  </div>
+
+  <!-- Decorative tech nodes -->
+  <div class="absolute -top-2 -right-2 w-4 h-4 bg-amber-500 rounded-full shadow-lg shadow-amber-500/50 opacity-80"></div>
+  <div class="absolute -bottom-2 -left-2 w-3 h-3 bg-amber-400 rounded-full shadow-lg shadow-amber-500/40 opacity-60"></div>
+
+  <!-- Status indicator line -->
+  <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-12 h-0.5 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-50"></div>
+</div>

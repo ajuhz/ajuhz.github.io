@@ -1,0 +1,110 @@
+<svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="600" fill="url(#bgGradient)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.05" stroke="#10b981">
+    <line x1="0" y1="0" x2="1200" y2="0"/>
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="480" x2="1200" y2="480"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+  </g>
+
+  <!-- Decorative neural network nodes on left -->
+  <g opacity="0.3" stroke="#10b981" stroke-width="2" fill="none">
+    <!-- Left cluster -->
+    <circle cx="100" cy="150" r="8" fill="#10b981" opacity="0.4"/>
+    <circle cx="80" cy="200" r="6" fill="#10b981" opacity="0.3"/>
+    <circle cx="140" cy="180" r="7" fill="#10b981" opacity="0.35"/>
+    <line x1="100" y1="150" x2="80" y2="200"/>
+    <line x1="100" y1="150" x2="140" y2="180"/>
+    <line x1="80" y1="200" x2="140" y2="180"/>
+  </g>
+
+  <!-- Decorative nodes on right -->
+  <g opacity="0.3" stroke="#10b981" stroke-width="2" fill="none">
+    <circle cx="1100" cy="450" r="8" fill="#10b981" opacity="0.4"/>
+    <circle cx="1120" cy="400" r="6" fill="#10b981" opacity="0.3"/>
+    <circle cx="1040" cy="420" r="7" fill="#10b981" opacity="0.35"/>
+    <line x1="1100" y1="450" x2="1120" y2="400"/>
+    <line x1="1100" y1="450" x2="1040" y2="420"/>
+    <line x1="1120" y1="400" x2="1040" y2="420"/>
+  </g>
+
+  <!-- Central geometric shapes representing AI architecture -->
+  <!-- Main circle (representing AI core) -->
+  <circle cx="600" cy="300" r="120" fill="none" stroke="url(#accentGradient)" stroke-width="3" opacity="0.8" filter="url(#glow)"/>
+  <circle cx="600" cy="300" r="120" fill="none" stroke="#10b981" stroke-width="1" opacity="0.3" r="130"/>
+
+  <!-- Inner layers -->
+  <circle cx="600" cy="300" r="80" fill="none" stroke="url(#accentGradient)" stroke-width="2" opacity="0.6"/>
+  <circle cx="600" cy="300" r="40" fill="url(#accentGradient)" opacity="0.15"/>
+
+  <!-- Center point -->
+  <circle cx="600" cy="300" r="8" fill="#10b981" opacity="0.8" filter="url(#glow)"/>
+
+  <!-- Radiating lines (representing connections) -->
+  <g stroke="#10b981" stroke-width="2" opacity="0.4">
+    <line x1="600" y1="300" x2="600" y2="170"/>
+    <line x1="600" y1="300" x2="730" y2="230"/>
+    <line x1="600" y1="300" x2="730" y2="370"/>
+    <line x1="600" y1="300" x2="600" y2="430"/>
+    <line x1="600" y1="300" x2="470" y2="370"/>
+    <line x1="600" y1="300" x2="470" y2="230"/>
+  </g>
+
+  <!-- Nodes at the end of radiating lines -->
+  <g fill="#10b981" opacity="0.6">
+    <circle cx="600" cy="170" r="6"/>
+    <circle cx="730" cy="230" r="6"/>
+    <circle cx="730" cy="370" r="6"/>
+    <circle cx="600" cy="430" r="6"/>
+    <circle cx="470" cy="370" r="6"/>
+    <circle cx="470" cy="230" r="6"/>
+  </g>
+
+  <!-- Animated-like pulses (static representation) -->
+  <circle cx="600" cy="300" r="140" fill="none" stroke="#10b981" stroke-width="1" opacity="0.2"/>
+  <circle cx="600" cy="300" r="160" fill="none" stroke="#10b981" stroke-width="1" opacity="0.1"/>
+
+  <!-- Text overlay -->
+  <g>
+    <!-- Title -->
+    <text x="600" y="520" font-size="48" font-weight="bold" fill="#f1f5f9" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif">
+      AI Architecture
+    </text>
+    <text x="600" y="565" font-size="20" fill="#10b981" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif">
+      GenAI • RAG • Agentic AI • Multi-Agent Systems
+    </text>
+  </g>
+
+  <!-- Subtle corner accent -->
+  <rect x="0" y="0" width="3" height="80" fill="#10b981"/>
+  <rect x="0" y="0" width="80" height="3" fill="#10b981"/>
+</svg>

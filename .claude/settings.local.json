@@ -16,7 +16,24 @@
       "Bash(npx astro *)",
       "Bash(git init *)",
       "Bash(git add *)",
-      "Bash(git commit -m 'Initial commit: Astro + Tailwind CSS portfolio site *)"
+      "Bash(git commit -m 'Initial commit: Astro + Tailwind CSS portfolio site *)",
+      "Bash(gh repo *)",
+      "Bash(curl -s http://localhost:3000/)",
+      "Bash(kill 8439)",
+      "Bash(curl -s -H \"User-Agent: Mozilla/5.0\" \"https://www.linkedin.com/in/ajayhazra\")",
+      "Bash(pkill -f \"astro dev\")",
+      "Bash(curl -s http://localhost:4321/)",
+      "Bash(curl -s http://localhost:4321/profile-hero.svg)",
+      "Bash(curl -s http://localhost:4321/ajayhazra/profile-hero.svg)",
+      "Bash(curl -s -o /tmp/test.jpg http://localhost:4321/ajayhazra/profile-photo.jpg)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4321/ajayhazra/profile-photo.jpg)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4321/ajayhazra/profile-hero.svg)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(netstat -tulpn)",
+      "Bash(npx playwright *)",
+      "Read(//tmp/**)",
+      "Bash(curl -s http://localhost:4321)",
+      "Bash(curl -s http://localhost:4321/ajayhazra)"
     ]
   }
 }
