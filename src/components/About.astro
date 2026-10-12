@@ -3,7 +3,17 @@ import ProfilePhoto from './ProfilePhoto.astro';
 ---
 
 <section class="section relative overflow-hidden">
-  <!-- Decorative background elements -->
+  <!-- Gradient overlay background -->
+  <div class="absolute inset-0 -z-10">
+    <!-- Amber gradient blob top-right -->
+    <div class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-b from-amber-500/20 to-transparent rounded-full blur-3xl opacity-40"></div>
+    <!-- Purple gradient blob bottom-left -->
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-t from-purple-500/20 to-transparent rounded-full blur-3xl opacity-40"></div>
+    <!-- Secondary purple glow -->
+    <div class="absolute top-1/2 right-1/4 w-80 h-80 bg-gradient-to-r from-purple-500/15 to-transparent rounded-full blur-3xl opacity-30"></div>
+  </div>
+
+  <!-- Decorative border elements -->
   <div class="absolute top-5 right-10 w-48 h-48 border border-amber-400/15 rounded-full opacity-40 blur-sm"></div>
   <div class="absolute -bottom-20 left-0 w-80 h-80 border-2 border-purple-500/10 rounded-full opacity-30 blur-lg"></div>
   <div class="absolute top-1/2 right-1/4 w-1.5 h-1.5 bg-amber-400/50 rounded-full animate-pulse"></div>
